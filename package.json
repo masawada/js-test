@@ -1,0 +1,15 @@
+{
+  "name": "js-test",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "gulp": "3.8.11",
+    "browserify": "9.0.8",
+    "notevil": "1.0.0",
+    "vinyl-source-stream": "1.1.0"
+  }
+}

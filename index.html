@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS console</title>
+</head>
+<body>
+  <div id="app">
+    <textarea rows="10" cols="60" v-model="script"></textarea>
+    <input type="button" value="run" v-on="click: exec">
+  </div>
+  <ul id="console">
+  </ul>
+  <script src="lib/vue.min.js"></script>
+  <script src="build/app.js"></script>
+</body>
+</html>
