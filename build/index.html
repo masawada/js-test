@@ -9,17 +9,18 @@
   <div id="app">
     <div class="scriptform">
       <div class="input">
-        <textarea class="sourcearea" rows="10" cols="60" v-model="script"></textarea>
+        <ul class="lines">
+          <li v-repeat="lines">{{$index+1}}</li>
+        </ul>
+        <textarea class="sourcearea" rows="10" cols="60" wrap="off" v-model="raw_script" v-on="keydown: sourceinput"></textarea>
       </div>
       <div class="output">
-        <pre data-line="2" class="language-javascript line-numbers">
-<code>console.log('hello');
-console.log('hello, world);</code>
+        <pre class="language-javascript line-numbers" data-line="{{errorLine}}">
+<code v-text="script"></code>
         </pre>
       </div>
     </div>
     <ul id="console">
-      <li class="error">SyntaxError: Unexpected token ILLEGAL</li>
     </ul>
   </div>
   <script src="lib/prism.js"></script>

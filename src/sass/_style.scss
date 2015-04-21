@@ -21,16 +21,44 @@ html, body, #app {
 }
 
 /* input */
-.sourcearea {
-  display: block;
-  height: 100%;
-  width: 100%;
-  padding: 14px 10px;
-  border: none;
-  font: normal 14px/21px Consolas, Monaco, 'Andale Mono', monospace;
-  box-sizing: border-box;
-  outline: none;
-  resize: none;
+.input {
+  clear: both;
+  overflow: hidden;
+
+  .lines {
+    position: relative;
+    display: block;
+    padding: 14px 5px 14px 0;
+    float: left;
+    width: 40px;
+    height: 100%;
+    background: #F0F0F0;
+    box-sizing: border-box;
+    z-index: 200;
+
+    > li {
+      font: normal 12px/21px Consolas, Monaco, 'Andale Mono', monospace;
+      overflow: hidden;
+      text-align: right;
+    }
+  }
+
+  .sourcearea {
+    position: relative;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 100%;
+    margin-left: -40px;
+    padding: 14px 10px 14px 50px;
+    border: none;
+    font: normal 14px/21px Consolas, Monaco, 'Andale Mono', monospace;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    z-index: 100;
+    overflow: scroll;
+  }
 }
 
 /* code highlight */
