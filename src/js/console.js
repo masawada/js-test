@@ -11,7 +11,7 @@ Console.prototype = {
   },
 
   log: function(message) {
-    this._appendLog(message);
+    this._appendLog(message, 'log');
   },
   warn: function(message) {
     this._appendLog(message, 'warn');

@@ -84,6 +84,7 @@ pre[class*="language-"] {
   border-top: solid 1px #CCCCCC;
   box-sizing: border-box;
   background-color: #FFFFFF;
+  overflow: scroll;
 
   > li {
     height: 20px;
@@ -96,11 +97,18 @@ pre[class*="language-"] {
 
     &.error {
       color: #FF0000;
-      content: 'Error: ';
+
+      &:before {
+        content: "Error: ";
+      }
     }
 
     &.warn {
       color: #808000;
+
+      &:before {
+        content: "Warning: ";
+      }
     }
 
     &.log {
