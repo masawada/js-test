@@ -9,17 +9,17 @@
   <div id="app">
     <div class="scriptform">
       <div class="input">
-        <textarea rows="10" cols="60" v-model="script"></textarea>
-        <input type="button" value="run" v-on="click: exec">
+        <textarea class="sourcearea" rows="10" cols="60" v-model="script"></textarea>
       </div>
       <div class="output">
         <pre data-line="2" class="language-javascript line-numbers">
 <code>console.log('hello');
-console.log('hello, world');</code>
+console.log('hello, world);</code>
         </pre>
       </div>
     </div>
     <ul id="console">
+      <li class="error">SyntaxError: Unexpected token ILLEGAL</li>
     </ul>
   </div>
   <script src="lib/prism.js"></script>

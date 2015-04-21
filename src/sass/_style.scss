@@ -20,7 +20,18 @@ html, body, #app {
   float: left;
 }
 
-/*  */
+/* input */
+.sourcearea {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 14px 10px;
+  border: none;
+  font: normal 14px/21px Consolas, Monaco, 'Andale Mono', monospace;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+}
 
 /* code highlight */
 .output {
@@ -42,5 +53,31 @@ pre[class*="language-"] {
   bottom: 0;
   height: 200px;
   width: 100%;
+  border-top: solid 1px #CCCCCC;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+
+  > li {
+    height: 20px;
+    font: normal 12px/20px Consolas, Monaco, 'Andale Mono', monospace;
+    padding: 0 10px;
+
+    &:nth-child(2n+1) {
+      background-color: #F4F4F4;
+    }
+
+    &.error {
+      color: #FF0000;
+      content: 'Error: ';
+    }
+
+    &.warn {
+      color: #808000;
+    }
+
+    &.log {
+      color: #0000FF;
+    }
+  }
 }
 
