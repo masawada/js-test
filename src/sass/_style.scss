@@ -1,3 +1,4 @@
+/* common */
 html, body, #app {
   height: 100%;
   width: 100%;
@@ -19,14 +20,27 @@ html, body, #app {
   float: left;
 }
 
-.input {
-  background: #999999;
+/*  */
+
+/* code highlight */
+.output {
+  padding: 0 10px;
+  box-sizing: border-box;
+  background-color: #F5F2F0;
 }
 
+pre[class*="language-"] {
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* console */
 #console {
   position: absolute;
   bottom: 0;
   height: 200px;
   width: 100%;
-  background: #F0F0F0;
 }
+

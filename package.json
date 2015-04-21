@@ -10,6 +10,8 @@
     "gulp": "3.8.11",
     "browserify": "9.0.8",
     "notevil": "1.0.0",
-    "vinyl-source-stream": "1.1.0"
+    "gulp-sass": "1.3.3",
+    "vinyl-source-stream": "1.1.0",
+    "browser-sync": "2.6.1"
   }
 }
