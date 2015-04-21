@@ -2,15 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/prism.css">
   <title>JS console</title>
 </head>
 <body>
   <div id="app">
-    <textarea rows="10" cols="60" v-model="script"></textarea>
-    <input type="button" value="run" v-on="click: exec">
+    <div class="scriptform">
+      <div class="input">
+        <textarea rows="10" cols="60" v-model="script"></textarea>
+        <input type="button" value="run" v-on="click: exec">
+      </div>
+      <div class="output">
+      </div>
+    </div>
+    <ul id="console">
+    </ul>
   </div>
-  <ul id="console">
-  </ul>
+  <script src="lib/prism.js"></script>
   <script src="lib/vue.min.js"></script>
   <script src="build/app.js"></script>
 </body>
