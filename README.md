@@ -9,3 +9,4 @@ MIT
 
 # Libraries
 * Vue.js <https://github.com/yyx990803/vue>
+* Prism <http://prismjs.com/>
