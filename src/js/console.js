@@ -5,7 +5,7 @@ var Console = function(consoleId) {
 Console.prototype = {
   _appendLog: function(message, style) {
     var li = document.createElement('li');
-    li.textContent = message;
+    li.textContent = String(JSON.stringify(message));
     li.className = style;
     this._out.insertBefore(li, this._out.firstChild);
   },
